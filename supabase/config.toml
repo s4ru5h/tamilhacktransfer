@@ -1,0 +1,7 @@
+# Supabase project config for the Tamil RPG speech backend.
+# The `speech` edge function is public (the game calls it straight from the
+# browser without a Supabase login) — JWT verification is off for now.
+# Add player auth before any production use.
+
+[functions.speech]
+verify_jwt = false

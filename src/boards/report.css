@@ -1,0 +1,13 @@
+@keyframes report-rise{0%{transform:translateY(6px);opacity:0}30%{transform:translateY(0);opacity:1}100%{opacity:1}}
+@keyframes report-bobx{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes report-floatH{0%{transform:translateY(0);opacity:0}20%{opacity:1}100%{transform:translateY(-70px);opacity:0}}
+@keyframes report-twinkle{0%,100%{opacity:.25;transform:scale(.6)}50%{opacity:1;transform:scale(1)}}
+@keyframes report-wave{0%,100%{transform:rotate(0)}50%{transform:rotate(-12deg)}}
+.dc-report .rise{animation:report-rise .6s steps(4) both}
+.dc-report .bobx{animation:report-bobx 1.2s steps(2) infinite}
+.dc-report .floatH{animation:report-floatH 2.4s steps(8) infinite}
+.dc-report .twinkle{animation:report-twinkle 1.6s steps(3) infinite}
+.dc-report .go:hover{transform:translateY(-2px)}
+.dc-report .loc{transition:transform .15s steps(2)}
+.dc-report .loc:hover{transform:translateY(-4px)}
+@media (prefers-reduced-motion: reduce){.dc-report .rise,.dc-report .bobx,.dc-report .floatH,.dc-report .twinkle{animation:none}}

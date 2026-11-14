@@ -1,0 +1,6 @@
+.dc-airport a{color:#3ee0d0}
+.dc-airport a:hover{color:#8ff3ea}
+@keyframes airport-bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,-5px)}}
+@keyframes airport-wave{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+.dc-airport .bob{animation:airport-bob 1.1s steps(2) infinite}
+.dc-airport .wv{transform-origin:center;animation:airport-wave .8s steps(3) infinite}

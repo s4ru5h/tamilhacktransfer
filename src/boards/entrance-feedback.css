@@ -1,0 +1,16 @@
+/* End screen · Paati's feedback sheet */
+.dc-feedback {
+  font-family: "Atkinson Hyperlegible", "Noto Sans Tamil", sans-serif;
+}
+
+.dc-feedback ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.dc-feedback ::-webkit-scrollbar-track {
+  background: #efe0c3;
+}
+.dc-feedback ::-webkit-scrollbar-thumb {
+  background: #c99a6b;
+  border: 2px solid #efe0c3;
+}

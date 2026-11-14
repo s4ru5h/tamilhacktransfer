@@ -1,0 +1,45 @@
+.dc-home-prototype a{color:#f2b705}
+.dc-home-prototype a:hover{color:#ffd166}
+@keyframes home-prototype-bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,-5px)}}
+@keyframes home-prototype-rise{0%{transform:translateY(6px);opacity:0}30%{transform:translateY(0);opacity:1}100%{transform:translateY(-4px);opacity:1}}
+@keyframes home-prototype-flick{0%,100%{opacity:1;transform:scaleY(1)}50%{opacity:.75;transform:scaleY(.7)}}
+@keyframes home-prototype-steam{0%{transform:translateY(0);opacity:0}30%{opacity:.8}100%{transform:translateY(-14px);opacity:0}}
+@keyframes home-prototype-breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(1px)}}
+@keyframes home-prototype-hop{0%,100%{transform:translateY(0)}25%{transform:translateY(-8px)}50%{transform:translateY(0)}75%{transform:translateY(-4px)}}
+@keyframes home-prototype-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-3px)}40%{transform:translateX(3px)}60%{transform:translateX(-2px)}80%{transform:translateX(2px)}}
+@keyframes home-prototype-tilt{0%,100%{transform:rotate(0)}30%,70%{transform:rotate(-7deg)}}
+@keyframes home-prototype-blink{0%,93%,100%{opacity:0}94%,97%{opacity:1}}
+@keyframes home-prototype-floatL{0%{transform:translate(0,0) scale(.5);opacity:0}15%{transform:translate(-4px,-8px) scale(1);opacity:1}100%{transform:translate(-26px,-74px) scale(.8);opacity:0}}
+@keyframes home-prototype-floatC{0%{transform:translate(0,0) scale(.5);opacity:0}15%{transform:translate(0,-8px) scale(1);opacity:1}100%{transform:translate(0,-86px) scale(.8);opacity:0}}
+@keyframes home-prototype-floatR{0%{transform:translate(0,0) scale(.5);opacity:0}15%{transform:translate(4px,-8px) scale(1);opacity:1}100%{transform:translate(26px,-74px) scale(.8);opacity:0}}
+@keyframes home-prototype-crackL{0%,35%{transform:translate(0,0) rotate(0);opacity:1}100%{transform:translate(-8px,12px) rotate(-20deg);opacity:0}}
+@keyframes home-prototype-crackR{0%,35%{transform:translate(0,0) rotate(0);opacity:1}100%{transform:translate(8px,12px) rotate(20deg);opacity:0}}
+@keyframes home-prototype-popA{0%,100%{transform:scale(1)}40%{transform:scale(1.5)}}
+@keyframes home-prototype-popB{0%,100%{transform:scale(1)}40%{transform:scale(1.5)}}
+@keyframes home-prototype-lossA{0%,100%{transform:translateX(0)}25%{transform:translateX(-3px)}50%{transform:translateX(3px)}75%{transform:translateX(-2px)}}
+@keyframes home-prototype-lossB{0%,100%{transform:translateX(0)}25%{transform:translateX(-3px)}50%{transform:translateX(3px)}75%{transform:translateX(-2px)}}
+@keyframes home-prototype-alarm{0%,100%{box-shadow:inset 0 0 0 2px #e9c46a}50%{box-shadow:inset 0 0 0 2px #e63946}}
+@keyframes home-prototype-glow{0%,100%{border-color:#ff8fa3}50%{border-color:#ffd166}}
+.dc-home-prototype .bob{animation:home-prototype-bob 1s steps(2) infinite}
+.dc-home-prototype .rise{animation:home-prototype-rise .6s steps(4) both}
+.dc-home-prototype .flick{transform-origin:bottom;animation:home-prototype-flick .5s steps(2) infinite}
+.dc-home-prototype .steam{animation:home-prototype-steam 1.6s steps(4) infinite}
+.dc-home-prototype .breathe{animation:home-prototype-breathe 2s steps(2) infinite}
+.dc-home-prototype .hop{transform-origin:bottom center;animation:home-prototype-hop .7s steps(4) 2}
+.dc-home-prototype .shake{animation:home-prototype-shake .4s steps(5) 3}
+.dc-home-prototype .tilt{transform-origin:bottom center;animation:home-prototype-tilt 1.2s steps(3) 1}
+.dc-home-prototype .blink{opacity:0;animation:home-prototype-blink 4s steps(1) infinite}
+.dc-home-prototype .floatL{animation:home-prototype-floatL 1.4s steps(7) both}
+.dc-home-prototype .floatC{animation:home-prototype-floatC 1.4s steps(7) both}
+.dc-home-prototype .floatR{animation:home-prototype-floatR 1.4s steps(7) both}
+.dc-home-prototype .crackL{animation:home-prototype-crackL 1.3s steps(5) both}
+.dc-home-prototype .crackR{animation:home-prototype-crackR 1.3s steps(5) both}
+.dc-home-prototype .popA{animation:home-prototype-popA .5s steps(3)}
+.dc-home-prototype .popB{animation:home-prototype-popB .5s steps(3)}
+.dc-home-prototype .lossA{animation:home-prototype-lossA .5s steps(4)}
+.dc-home-prototype .lossB{animation:home-prototype-lossB .5s steps(4)}
+.dc-home-prototype .alarm{animation:home-prototype-alarm 1s steps(2) infinite}
+.dc-home-prototype .glow{animation:home-prototype-glow 1s steps(2) infinite}
+.dc-home-prototype .opt:hover{background:#3a3350 !important}
+@media (prefers-reduced-motion: reduce){.dc-home-prototype .bob,.dc-home-prototype .rise,.dc-home-prototype .flick,.dc-home-prototype .steam,.dc-home-prototype .breathe,.dc-home-prototype .hop,.dc-home-prototype .shake,.dc-home-prototype .tilt,.dc-home-prototype .blink,.dc-home-prototype .floatL,.dc-home-prototype .floatC,.dc-home-prototype .floatR,.dc-home-prototype .popA,.dc-home-prototype .popB,.dc-home-prototype .lossA,.dc-home-prototype .lossB,.dc-home-prototype .alarm,.dc-home-prototype .glow{animation:none}
+.dc-home-prototype .crackL,.dc-home-prototype .crackR{animation:none;opacity:0}}

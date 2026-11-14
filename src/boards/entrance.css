@@ -1,0 +1,66 @@
+.dc-entrance a{color:#f2b705}
+.dc-entrance a:hover{color:#ffd166}
+@keyframes entrance-bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,-5px)}}
+@keyframes entrance-rise{0%{transform:translateY(6px);opacity:0}30%{transform:translateY(0);opacity:1}100%{transform:translateY(-4px);opacity:1}}
+@keyframes entrance-sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@keyframes entrance-breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(1px)}}
+@keyframes entrance-hop{0%,100%{transform:translateY(0)}25%{transform:translateY(-8px)}50%{transform:translateY(0)}75%{transform:translateY(-4px)}}
+@keyframes entrance-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-3px)}40%{transform:translateX(3px)}60%{transform:translateX(-2px)}80%{transform:translateX(2px)}}
+@keyframes entrance-droop{0%{transform:translateY(0) rotate(0)}40%{transform:translateY(2px) rotate(-5deg)}100%{transform:translateY(1px) rotate(-3deg)}}
+@keyframes entrance-blink{0%,93%,100%{opacity:0}94%,97%{opacity:1}}
+@keyframes entrance-talk{0%,100%{opacity:0}50%{opacity:1}}
+@keyframes entrance-floatL{0%{transform:translate(0,0) scale(.5);opacity:0}15%{transform:translate(-4px,-8px) scale(1);opacity:1}100%{transform:translate(-26px,-74px) scale(.8);opacity:0}}
+@keyframes entrance-floatC{0%{transform:translate(0,0) scale(.5);opacity:0}15%{transform:translate(0,-8px) scale(1);opacity:1}100%{transform:translate(0,-86px) scale(.8);opacity:0}}
+@keyframes entrance-floatR{0%{transform:translate(0,0) scale(.5);opacity:0}15%{transform:translate(4px,-8px) scale(1);opacity:1}100%{transform:translate(26px,-74px) scale(.8);opacity:0}}
+@keyframes entrance-crackL{0%,35%{transform:translate(0,0) rotate(0);opacity:1}100%{transform:translate(-8px,12px) rotate(-20deg);opacity:0}}
+@keyframes entrance-crackR{0%,35%{transform:translate(0,0) rotate(0);opacity:1}100%{transform:translate(8px,12px) rotate(20deg);opacity:0}}
+@keyframes entrance-popA{0%,100%{transform:scale(1)}40%{transform:scale(1.5)}}
+@keyframes entrance-popB{0%,100%{transform:scale(1)}40%{transform:scale(1.5)}}
+@keyframes entrance-lossA{0%,100%{transform:translateX(0)}25%{transform:translateX(-3px)}50%{transform:translateX(3px)}75%{transform:translateX(-2px)}}
+@keyframes entrance-lossB{0%,100%{transform:translateX(0)}25%{transform:translateX(-3px)}50%{transform:translateX(3px)}75%{transform:translateX(-2px)}}
+@keyframes entrance-alarm{0%,100%{box-shadow:inset 0 0 0 3px #e8ad2f}50%{box-shadow:inset 0 0 0 3px #e63946}}
+@keyframes entrance-glow{0%,100%{border-color:#c2185b}50%{border-color:#e8ad2f}}
+.dc-entrance .bob{animation:entrance-bob 1s steps(2) infinite}
+.dc-entrance .rise{animation:entrance-rise .6s steps(4) both}
+.dc-entrance .sway{transform-origin:bottom center;animation:entrance-sway 2.4s steps(3) infinite}
+.dc-entrance .breathe{animation:entrance-breathe 2s steps(2) infinite}
+.dc-entrance .hop{transform-origin:bottom center;animation:entrance-hop .7s steps(4) 2}
+.dc-entrance .shake{animation:entrance-shake .4s steps(5) 2,entrance-droop .6s steps(3) .8s forwards}
+.dc-entrance .blink{opacity:0;animation:entrance-blink 4s steps(1) infinite}
+.dc-entrance .talk{opacity:0;animation:entrance-talk .32s steps(1) 7}
+.dc-entrance .floatL{animation:entrance-floatL 1.4s steps(7) both}
+.dc-entrance .floatC{animation:entrance-floatC 1.4s steps(7) both}
+.dc-entrance .floatR{animation:entrance-floatR 1.4s steps(7) both}
+.dc-entrance .crackL{animation:entrance-crackL 1.3s steps(5) both}
+.dc-entrance .crackR{animation:entrance-crackR 1.3s steps(5) both}
+.dc-entrance .popA{animation:entrance-popA .5s steps(3)}
+.dc-entrance .popB{animation:entrance-popB .5s steps(3)}
+.dc-entrance .lossA{animation:entrance-lossA .5s steps(4)}
+.dc-entrance .lossB{animation:entrance-lossB .5s steps(4)}
+.dc-entrance .alarm{animation:entrance-alarm 1s steps(2) infinite}
+@keyframes entrance-listen{0%,100%{box-shadow:0 0 0 0 rgba(230,57,70,.7)}50%{box-shadow:0 0 0 10px rgba(230,57,70,0)}}
+.dc-entrance .listen{animation:entrance-listen 1s steps(3) infinite}
+.dc-entrance .glow{animation:entrance-glow 1s steps(2) infinite}
+.dc-entrance .walk{transition:left .9s steps(9),top .9s steps(9)}
+@keyframes entrance-peck{0%,70%,100%{transform:translateY(0)}74%{transform:translateY(-4px)}78%{transform:translateY(0)}82%{transform:translateY(-3px)}86%{transform:translateY(0)}}
+@keyframes entrance-flutter{0%{transform:translate(0,0) scaleX(1)}12%{transform:translate(14px,-10px) scaleX(.3)}25%{transform:translate(30px,-4px) scaleX(1)}37%{transform:translate(40px,-18px) scaleX(.3)}50%{transform:translate(26px,-26px) scaleX(1)}62%{transform:translate(8px,-20px) scaleX(.3)}75%{transform:translate(-6px,-8px) scaleX(1)}87%{transform:translate(-10px,2px) scaleX(.3)}100%{transform:translate(0,0) scaleX(1)}}
+@keyframes entrance-tailwag{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(14deg)}}
+@keyframes entrance-pend{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(14deg)}}
+@keyframes entrance-drift{0%{transform:translate(0,0);opacity:0}20%{opacity:.9}100%{transform:translate(18px,-26px);opacity:0}}
+@keyframes entrance-glowp{0%,100%{opacity:.75}50%{opacity:1}}
+@keyframes entrance-whistle{0%,78%,100%{transform:translateY(0) scale(.6);opacity:0}84%{opacity:1;transform:translateY(-6px) scale(1)}94%{opacity:0;transform:translateY(-18px) scale(1.4)}}
+@keyframes entrance-flick{0%,100%{opacity:1;transform:scaleY(1)}50%{opacity:.7;transform:scaleY(.6)}}
+.dc-entrance .peck{animation:entrance-peck 3.2s steps(1) infinite}
+.dc-entrance .flutter{animation:entrance-flutter 5s steps(16) infinite}
+.dc-entrance .flutter2{animation:entrance-flutter 6.5s steps(16) infinite reverse}
+.dc-entrance .tailwag{transform-origin:left center;animation:entrance-tailwag 1.3s steps(3) infinite}
+.dc-entrance .pend{transform-origin:top center;animation:entrance-pend 1.6s steps(4) infinite}
+.dc-entrance .drift{animation:entrance-drift 4s steps(8) infinite}
+.dc-entrance .drift2{animation:entrance-drift 4s steps(8) 2s infinite}
+.dc-entrance .glowp{animation:entrance-glowp 3s steps(3) infinite}
+.dc-entrance .whistle{animation:entrance-whistle 4.5s steps(6) infinite}
+.dc-entrance .flick{transform-origin:bottom;animation:entrance-flick .5s steps(2) infinite}
+.dc-entrance .opt:hover{background:#fdeec9 !important;border-color:#e8ad2f !important}
+@media (prefers-reduced-motion: reduce){.dc-entrance .bob,.dc-entrance .rise,.dc-entrance .sway,.dc-entrance .breathe,.dc-entrance .hop,.dc-entrance .shake,.dc-entrance .blink,.dc-entrance .talk,.dc-entrance .floatL,.dc-entrance .floatC,.dc-entrance .floatR,.dc-entrance .popA,.dc-entrance .popB,.dc-entrance .lossA,.dc-entrance .lossB,.dc-entrance .alarm,.dc-entrance .glow,.dc-entrance .listen,.dc-entrance .peck,.dc-entrance .flutter,.dc-entrance .flutter2,.dc-entrance .tailwag,.dc-entrance .pend,.dc-entrance .drift,.dc-entrance .drift2,.dc-entrance .glowp,.dc-entrance .whistle,.dc-entrance .flick{animation:none}
+.dc-entrance .crackL,.dc-entrance .crackR{animation:none;opacity:0}
+.dc-entrance .walk{transition:none}}
